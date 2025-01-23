@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8a8383;
+}
+
+.container { /* container geral */
+    width: 90%;
+    height: 90vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 50px 1fr 100px;
+    grid-gap: 10px;
+}
+
+.buttons {/* container direita */
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #504d4d;
+    color: #ffffff; /* Define a cor das letras para branco */
+    font-family: Arial, sans-serif;
+}
+
+.buttons button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.buttons label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    display: inline-block;
+    width: 40%;
+}
+
+.main-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 1px solid red;
+    width: 50%;
+    height: 70%;
+    margin: 0 auto;
+    overflow: hidden; /* Garante que nada saia do box */
+}
+
+.bottom-controls {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border: 1px solid #8a8383;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-controls div {
+    margin: 0 5px;
+}
+
+.bottom-controls label {
+    margin-left: 5px;
+}
+.insight-message {
+    
+    font-size: 12px;
+    
+    text-align: center;
+    margin-top: auto; /* Move a frase para o final do container */
+    padding-top: 15px; /* Espaço extra acima da frase */
+}
