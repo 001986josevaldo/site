@@ -19,5 +19,4 @@ Python (ou outra linguagem de servidor)
 Flask (ou outro framework web)
 
 Biblioteca para processamento de imagem (ex: OpenCV, PIL)
-# site
-# site
+
