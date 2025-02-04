@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface de Controle</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconhecimento PPT</title>
     <!-- Link para o arquivo CSS externo -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Inclui o arquivo index.js como um módulo -->
     <script src="index.js"></script>
     <div class="container">
-        <!-- Label e Button Panel -->
-        <div class="buttons">
-            
-            <div>Total: <label id="total-inferencia">1</label></div> <!-- Label atualizada com o total -->
-            <div>Papel: <label id="papel-inferencia">0</label></div> <!-- Label atualizada com o total -->
-            <div>Pedra: <label id="pedra-inferencia">0</label></div> <!-- Label atualizada com o total -->
-            <div>Tesoura: <label id="tesoura-inferencia">0</label></div> <!-- Label atualizada com o total -->
-            
-            <!-- id do start, stop btn -->
-            <button id="start-btn">Start Inference</button>
-            <button id="stop-btn">Stop Inference</button>
-            <button>Toggle Camera</button>
-            <button>Save Results</button>
-            <p class="insight-message">Transforme imagens em percepções...</p>
-        </div>
+      <!-- Label e Button Panel -->
+      <div class="buttons">
+        <div>Total: <label id="total-inferencia">1</label></div>
+        <!-- Label atualizada com o total -->
+        <div>Papel: <label id="papel-inferencia">0</label></div>
+        <!-- Label atualizada com o total -->
+        <div>Pedra: <label id="pedra-inferencia">0</label></div>
+        <!-- Label atualizada com o total -->
+        <div>Tesoura: <label id="tesoura-inferencia">0</label></div>
+        <!-- Label atualizada com o total -->
 
-        <!-- Main Box -->
-        <div class="main-box"></div>
+        <!-- id do start, stop btn -->
+        <button id="start-btn">Start Inference</button>
+        <button id="stop-btn">Stop Inference</button>
+        <button>Toggle Camera</button>
+        <button>Save Results</button>
+        <p class="insight-message">Transforme imagens em percepções...</p>
+      </div>
 
-        <!-- Bottom Controls -->
-        <div class="bottom-controls">
-            <div>
-                <input type="radio" id="horizontal" name="orientation" value="horizontal" checked>
-                <label for="horizontal">Horizontal</label>
-            </div>
-            <div>
-                <input type="radio" id="vertical" name="orientation" value="vertical">
-                <label for="vertical">Vertical</label>
-            </div>
-            <div>
-                <label for="tamanho">Tamanho:</label>
-                <input type="range" id="tamanho" name="tamanho" min="1" max="100">
-            </div>
-            <div>
-                <label for="eixoX">Eixo X:</label>
-                <input type="range" id="eixoX" name="eixoX" min="1" max="100">
-            </div>
-            <div>
-                <label for="eixoY">Eixo Y:</label>
-                <input type="range" id="eixoY" name="eixoY" min="1" max="100">
-            </div>
+      <!-- Main Box -->
+      <div class="main-box"></div>
+
+      <!-- Bottom Controls -->
+      <div class="bottom-controls">
+        <div>
+          <input
+            type="radio"
+            id="horizontal"
+            name="orientation"
+            value="horizontal"
+            checked
+          />
+          <label for="horizontal">Horizontal</label>
         </div>
+        <div>
+          <input
+            type="radio"
+            id="vertical"
+            name="orientation"
+            value="vertical"
+          />
+          <label for="vertical">Vertical</label>
+        </div>
+        <div>
+          <label for="tamanho">Tamanho:</label>
+          <input type="range" id="tamanho" name="tamanho" min="1" max="100" />
+        </div>
+        <div>
+          <label for="eixoX">Eixo X:</label>
+          <input type="range" id="eixoX" name="eixoX" min="1" max="100" />
+        </div>
+        <div>
+          <label for="eixoY">Eixo Y:</label>
+          <input type="range" id="eixoY" name="eixoY" min="1" max="100" />
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
